@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
 * Ruby version
 
-* System dependencies
+Tested with ruby 2.3.1
 
-* Configuration
+* Running
 
-* Database creation
+The dependencies for the app are managed by Bundler.
 
-* Database initialization
+    gem install bundler
+    git clone http://github.com/ksob/freelancer_sample.git
+    cd ./freelancer_sample
+	bundle install
+	rails db:create db:setup
+	rails server
 
-* How to run the test suite
+* Notes
 
-* Services (job queues, cache servers, search engines, etc.)
+It is important to run db:setup (or db:seed) rake task, as the quotes needs to be imported from the quotes site before running the app.
 
-* Deployment instructions
-
-* ...
